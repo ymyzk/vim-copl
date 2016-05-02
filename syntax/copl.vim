@@ -9,15 +9,17 @@ endif
 syntax keyword coplKeywords by
 syntax keyword coplOperators plus minus times is evalto less than
 
+syntax match coplNumber "\d\+"
 syntax match coplComment "//.*$"
-syntax region coplComment start="(\*" end="\*)"
 syntax match coplPlaceholder "?"
 syntax match coplRuleName "[A-Z]\+\-\([A-Z][a-z]*\)\+"
 
-highlight def link coplKeywords Keyword
-highlight def link coplOperators Operator
+syntax region coplComment start="(\*" end="\*)"
 
 highlight def link coplComment Comment
+highlight def link coplKeywords Keyword
+highlight def link coplNumber Number
+highlight def link coplOperators Operator
 highlight def link coplPlaceholder Todo
 highlight def link coplRuleName Special
 
