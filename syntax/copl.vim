@@ -12,6 +12,9 @@ syntax keyword coplOperators plus minus times is evalto less than
 syntax match coplNumber "\d\+"
 syntax match coplComment "//.*$"
 syntax match coplPlaceholder "?"
+syntax match coplOperators "\-\-\->"
+syntax match coplOperators "\-d\->"
+syntax match coplOperators "\-\*\->"
 syntax match coplRuleName "[A-Z]\+\-\([A-Z][a-z]*\)\+"
 
 syntax region coplComment start="(\*" end="\*)"
