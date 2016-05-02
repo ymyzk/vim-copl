@@ -7,7 +7,7 @@ elseif exists("b:current_syntax") && b:current_syntax == "copl"
 endif
 
 syntax keyword coplKeywords by
-syntax keyword coplOperators plus times is evalto less than
+syntax keyword coplOperators plus minus times is evalto less than
 
 syntax match coplComment "//.*$"
 syntax region coplComment start="(\*" end="\*)"
