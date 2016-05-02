@@ -12,7 +12,7 @@ syntax keyword coplOperators plus minus times is evalto less than
 syntax match coplComment "//.*$"
 syntax region coplComment start="(\*" end="\*)"
 syntax match coplPlaceholder "?"
-syntax match coplRuleName "[A-Z]\-[A-Z][a-z]*\([A-Z][a-z]*\)*"
+syntax match coplRuleName "[A-Z]\+\-\([A-Z][a-z]*\)\+"
 
 highlight def link coplKeywords Keyword
 highlight def link coplOperators Operator
