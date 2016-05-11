@@ -20,6 +20,7 @@ syn match coplOperator "\-d\->"
 syn match coplOperator "\-\*\->"
 syn match coplOperator "|-"
 syn match coplRuleName "[A-Z]\+\-\([A-Z][a-z0-9]*\)\+"
+syn match coplVariable "$[A-Za-z][A-Za-z0-9'_]*"
 
 syn region coplComment start="(\*" end="\*)"
 
@@ -31,5 +32,6 @@ hi def link coplNumber Number
 hi def link coplOperator Operator
 hi def link coplPlaceholder Todo
 hi def link coplRuleName Special
+hi def link coplVariable Identifier
 
 let b:current_syntax = "copl"
