@@ -8,7 +8,7 @@ endif
 
 syn keyword coplBoolean true false
 syn keyword coplConditional if then else
-syn keyword coplKeyword by def fun let in
+syn keyword coplKeyword by def fun let rec in
 syn keyword coplOperator plus minus times is evalto less than
 
 syn match coplKeyword "->"
