@@ -20,7 +20,7 @@ syn match coplOperator "\-d\->"
 syn match coplOperator "\-\*\->"
 syn match coplOperator "|-"
 syn match coplRuleName "[A-Z]\+\-\([A-Z][a-z0-9]*\)\+"
-syn match coplVariable "$[A-Za-z][A-Za-z0-9'_]*"
+syn match coplVariable "$[A-Za-z]\+[0-9'_]*"
 
 syn region coplComment start="(\*" end="\*)"
 
