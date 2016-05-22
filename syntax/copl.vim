@@ -8,19 +8,23 @@ endif
 
 syn keyword coplBoolean true false
 syn keyword coplConditional if then else
-syn keyword coplKeyword by def fun let rec in
-syn keyword coplOperator plus minus times is evalto less than
+syn keyword coplKeyword by def fun let rec in match with
+syn keyword coplOperator plus minus times is evalto less than matches when
 
 syn match coplKeyword "->"
-syn match coplNumber "\d\+"
+syn match coplNumber "\<\d\+\>"
 syn match coplComment "//.*$"
 syn match coplPlaceholder "?"
 syn match coplOperator "\-\-\->"
 syn match coplOperator "\-d\->"
 syn match coplOperator "\-\*\->"
+syn match coplOperator "==>"
 syn match coplOperator "|-"
-syn match coplRuleName "[A-Z]\+\-\([A-Z][a-z0-9]*\)\+"
+syn match coplOperator "::"
+syn match coplOperator "doesn't match"
+syn match coplRuleName "\([A-Z][a-z]*\)\+\-\([A-Z][a-z0-9]*\)\+"
 syn match coplVariable "$[A-Za-z]\+[0-9'_]*"
+syn match coplVariable "#[1-9][0-9]*"
 
 syn region coplComment start="(\*" end="\*)"
 
