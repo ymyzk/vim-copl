@@ -8,8 +8,9 @@ endif
 
 syn keyword coplBoolean true false
 syn keyword coplConditional if then else
-syn keyword coplKeyword by def fun let rec in match with
+syn keyword coplKeyword by def fun let rec in match with letcc
 syn keyword coplOperator plus minus times is evalto less than matches when
+syn keyword coplType bool int list
 
 syn match coplKeyword "->"
 syn match coplNumber "\<\d\+\>"
@@ -22,7 +23,10 @@ syn match coplOperator "==>"
 syn match coplOperator "|-"
 syn match coplOperator "::"
 syn match coplOperator "doesn't match"
+syn match coplOperator "=>"
+syn match coplOperator ">>"
 syn match coplRuleName "\([A-Z][a-z]*\)\+\-\([A-Z][a-z0-9]*\)\+"
+syn match coplType "'[a-z]"
 syn match coplVariable "$[A-Za-z]\+[0-9'_]*"
 syn match coplVariable "#[1-9][0-9]*"
 
@@ -36,6 +40,7 @@ hi def link coplNumber Number
 hi def link coplOperator Operator
 hi def link coplPlaceholder Todo
 hi def link coplRuleName Special
+hi def link coplType Type
 hi def link coplVariable Identifier
 
 let b:current_syntax = "copl"
