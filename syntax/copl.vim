@@ -8,13 +8,12 @@ endif
 
 syn keyword coplBoolean true false
 syn keyword coplConditional if then else
-syn keyword coplKeyword by def fun let rec in match with letcc
+syn keyword coplKeyword by def fun error let rec in match with letcc
 syn keyword coplOperator plus minus times is evalto less than matches when
-syn keyword coplType bool int list
+syn keyword coplType bool int list ref
 
 syn match coplKeyword "->"
 syn match coplNumber "\<\d\+\>"
-syn match coplComment "//.*$"
 syn match coplPlaceholder "?"
 syn match coplOperator "\-\-\->"
 syn match coplOperator "\-d\->"
@@ -25,10 +24,15 @@ syn match coplOperator "::"
 syn match coplOperator "doesn't match"
 syn match coplOperator "=>"
 syn match coplOperator ">>"
+syn match coplOperator "!"
+syn match coplOperator "/"
+syn match coplOperator ":="
 syn match coplRuleName "\([A-Z][a-z]*\)\+\-\([A-Z][a-z0-9]*\)\+"
 syn match coplType "'[a-z]"
 syn match coplVariable "$[A-Za-z]\+[0-9'_]*"
 syn match coplVariable "#[1-9][0-9]*"
+syn match coplVariable "@[a-z]\+[0-9]*"
+syn match coplComment "//.*$" " Conflicts with / operator
 
 syn region coplComment start="(\*" end="\*)"
 
