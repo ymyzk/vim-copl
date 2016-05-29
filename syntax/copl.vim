@@ -8,8 +8,8 @@ endif
 
 syn keyword coplBoolean true false
 syn keyword coplConditional if then else
-syn keyword coplKeyword by def fun error let rec in match with letcc
-syn keyword coplOperator plus minus times is evalto less than matches when
+syn keyword coplKeyword by def fun error let rec in match with letcc skip while do
+syn keyword coplOperator plus minus times is evalto less than matches when not changes to
 syn keyword coplType bool int list ref
 
 syn match coplKeyword "->"
