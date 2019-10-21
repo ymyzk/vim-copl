@@ -18,3 +18,4 @@ call dein#add('ymyzk/vim-copl')
 
 ## リンク
 - 京都大学大学院情報学研究科 通信情報システム専攻 専門科目 [プログラム意味論](http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/class/sem/)
+- Emacs ユーザーなら: [ashiato45/igarashi-copl-mode](https://github.com/ashiato45/igarashi-copl-mode)
